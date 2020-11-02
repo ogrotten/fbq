@@ -1,19 +1,9 @@
 import React, { Component } from "react";
 
+import { Container, Grid, Header, List, Menu, Segment } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
-import {
-	Button,
-	Container,
-	Divider,
-	Grid,
-	Header,
-	List,
-	Menu,
-	Segment
-} from "semantic-ui-react";
 
-import "./App.css";
 
 class App extends Component {
 	render() {
