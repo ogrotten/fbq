@@ -22,6 +22,7 @@ class App extends Component {
 				</Menu>
 				<Grid container stackable>
 					<Grid.Row>
+						{/* Left Sidebar */}
 						<Grid.Column width={4} floated="left">
 							<Divider hidden />
 							<Header as="h4">Queries</Header>
@@ -37,6 +38,8 @@ class App extends Component {
 								<List.Item as="a">Facebook</List.Item>
 							</List>
 						</Grid.Column>
+
+						{/* Main Content */}
 						<Grid.Column width={12}>
 							<Segment basic>
 								<Header as="h1" size="huge">
