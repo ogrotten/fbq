@@ -20,12 +20,12 @@ const App = () => {
 						<h2>Football Queries</h2>
 					</Menu.Item>
 				</Menu>
+				<Divider hidden />
 			</Container>
 			<Grid container stackable>
 				<Grid.Row>
 					{/* Left Sidebar */}
 					<Grid.Column width={4} floated="left">
-						<Divider hidden />
 						<Header as="h4">Queries</Header>
 						<List>
 							<List.Item as="a">Feature One</List.Item>
@@ -43,15 +43,14 @@ const App = () => {
 					{/* Main */}
 					<Grid.Column width={12}>
 						{/* Main Title */}
-						<Segment basic>
+						{/* <Segment basic>
 							<Header as="h1" size="huge">
 								<Header.Content></Header.Content>
 								<Header.Subheader>
-									Doing all the hard parts of getting NFL stats.
-									</Header.Subheader>
+									Doing the dirty work for NFL nerds.
+								</Header.Subheader>
 							</Header>
-						</Segment>
-						<Divider />
+						</Segment> */}
 
 						{/* Main Content */}
 						<Segment>
