@@ -3,21 +3,24 @@ import React from "react";
 import { Container, Grid, Header, List, Menu, Segment, Divider } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
+const { Row, Column } = Grid
+
 
 const App = () => {
 	return (
 		<div style={{ width: 900, margin: "0 auto" }}>
-			<Menu borderless inverted pointing color="blue">
-				<Container>
-					<Menu.Item header active>
-						Home
-            			</Menu.Item>
+			<Container>
+				<Menu borderless inverted pointing color="blue">
+					<Menu.Item header active>Home</Menu.Item>
 					<Menu.Item>New feature</Menu.Item>
 					<Menu.Item>Press</Menu.Item>
 					<Menu.Item>New hires</Menu.Item>
 					<Menu.Item>About</Menu.Item>
-				</Container>
-			</Menu>
+					<Menu.Item className="right menu">
+						<h2>Football Queries</h2>
+					</Menu.Item>
+				</Menu>
+			</Container>
 			<Grid container stackable>
 				<Grid.Row>
 					{/* Left Sidebar */}
@@ -37,73 +40,24 @@ const App = () => {
 						</List>
 					</Grid.Column>
 
-					{/* Main Content */}
+					{/* Main */}
 					<Grid.Column width={12}>
+						{/* Main Title */}
 						<Segment basic>
 							<Header as="h1" size="huge">
-								<Header.Content>Football Queries</Header.Content>
+								<Header.Content></Header.Content>
 								<Header.Subheader>
 									Doing all the hard parts of getting NFL stats.
 									</Header.Subheader>
 							</Header>
 						</Segment>
 						<Divider />
-						<Segment>
-							<Header size="large" as="h2">
-								<Header.Content>Sample blog post</Header.Content>
-								<Header.Subheader>
-									March 6, 2017 by <a href="#root">Jack</a>
-								</Header.Subheader>
-							</Header>
 
-							<Header as="h3" size="large">
-								Heading</Header>
-							<p>
-								Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-								auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
-								ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta
-								ac consectetur ac, vestibulum at eros.</p>
-							<Header as="h3" size="medium">
-								Sub-heading</Header>
-							<p>
-								Cum sociis natoque penatibus et magnis dis parturient montes,
-								nascetur ridiculus mus.</p>
-							<Segment secondary>
-								<code>Example code block</code>
-							</Segment>
-							<p>
-								Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-								malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-								commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-							<Header size="medium">Sub-heading</Header>
-							<p>
-								Cum sociis natoque penatibus et magnis dis parturient montes,
-								nascetur ridiculus mus. Aenean lacinia bibendum nulla sed
-								consectetur. Etiam porta sem malesuada magna mollis euismod.
-								Fusce dapibus, tellus ac cursus commodo, tortor mauris
-								condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-							<ul>
-								<li>
-									Praesent commodo cursus magna, vel scelerisque nisl
-									consectetur et.</li>
-								<li>Donec id elit non mi porta gravida at eget metus.</li>
-								<li>Nulla vitae elit libero, a pharetra augue.</li>
-							</ul>
-							<p>
-								Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae
-								elit libero, a pharetra augue.</p>
-							<ol>
-								<li>Vestibulum id ligula porta felis euismod semper.</li>
-								<li>
-									Cum sociis natoque penatibus et magnis dis parturient montes,
-									nascetur ridiculus mus.</li>
-								<li>
-									Maecenas sed diam eget risus varius blandit sit amet non
-									magna.</li>
-							</ol>
-							<p>
-								Cras mattis consectetur purus sit amet fermentum. Sed posuere
-								consectetur est at lobortis.</p>
+						{/* Main Content */}
+						<Segment>
+							<div size="large" as="h2">
+								<h2>Team Record Search</h2>
+							</div>
 						</Segment>
 					</Grid.Column>
 				</Grid.Row>
