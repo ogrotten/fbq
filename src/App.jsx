@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Grid, Header, List, Menu, Segment } from "semantic-ui-react";
+import { Container, Grid, Header, List, Menu, Segment, Divider } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
 
@@ -8,7 +8,7 @@ import "semantic-ui-css/semantic.min.css";
 class App extends Component {
 	render() {
 		return (
-			<div style={{width:900, margin:"0 auto"}}>
+			<div style={{ width: 900, margin: "0 auto" }}>
 				<Menu borderless inverted pointing color="blue">
 					<Container>
 						<Menu.Item header active>
@@ -23,32 +23,16 @@ class App extends Component {
 				<Grid container stackable>
 					<Grid.Row>
 						<Grid.Column width={4} floated="left">
-							<Segment secondary>
-								<Header as="h4">About</Header>
-								<p>
-									Etiam porta <i>sem malesuada magna mollis euismod</i>. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-							</Segment>
-							<Header as="h4">Archives</Header>
+							<Divider hidden />
+							<Header as="h4">Queries</Header>
 							<List>
-								<List.Item as="a">Septempber 2017</List.Item>
-								<List.Item as="a">August 2017</List.Item>
-								<List.Item as="a">June 2017</List.Item>
-								<List.Item as="a">April 2017</List.Item>
-								<List.Item as="a">March 2017</List.Item>
-								<List.Item as="a">February 2017</List.Item>
-								<List.Item as="a">January 2017</List.Item>
-								<List.Item as="a">December 2016</List.Item>
-								<List.Item as="a">October 2016</List.Item>
-								<List.Item as="a">July 2016</List.Item>
-								<List.Item as="a">July 2016</List.Item>
-								<List.Item as="a">May 2016</List.Item>
-								<List.Item as="a">April 2016</List.Item>
-								<List.Item as="a">January 2016</List.Item>
-								<List.Item as="a">May 2015</List.Item>
+								<List.Item as="a">Feature One</List.Item>
+								<List.Item as="a">Second Thing</List.Item>
+								<List.Item as="a">One More</List.Item>
 							</List>
 							<Header as="h4">Elsewhere</Header>
 							<List>
-								<List.Item as="a">Github</List.Item>
+								<List.Item as="a">Reddit</List.Item>
 								<List.Item as="a">Twitter</List.Item>
 								<List.Item as="a">Facebook</List.Item>
 							</List>
@@ -56,12 +40,13 @@ class App extends Component {
 						<Grid.Column width={12}>
 							<Segment basic>
 								<Header as="h1" size="huge">
-									<Header.Content>The Semantic-UI Blog</Header.Content>
+									<Header.Content>Football Queries</Header.Content>
 									<Header.Subheader>
-										A simple example of creating a blog with Semantic-UI.
-								</Header.Subheader>
+										Doing all the hard parts of getting NFL stats.
+									</Header.Subheader>
 								</Header>
 							</Segment>
+							<Divider />
 							<Segment>
 								<Header size="large" as="h2">
 									<Header.Content>Sample blog post</Header.Content>
