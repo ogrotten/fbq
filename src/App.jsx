@@ -75,7 +75,7 @@ const App = () => {
 								{payload.map(line => {
 									return (
 										// <p>{line.team}</p>
-										<Table.Row>
+										<Table.Row key={status}>
 											<Table.Cell collapsing>{line.season}</Table.Cell>
 											<Table.Cell collapsing>{line.record}</Table.Cell>
 											<Table.Cell selectable collapsing>{line.team}</Table.Cell>
