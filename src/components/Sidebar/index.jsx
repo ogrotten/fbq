@@ -1,37 +1,33 @@
 import React from "react";
 
-import {
-	Button,
-	ButtonGroup,
-	Card,
-	Divider,
-	Grid,
-	List,
-	ListItem,
-	Menu,
-	Paper,
-	Table,
-	TableHead,
-	TableBody,
-	TableCell,
-	TableRow,
-	Typography,
-} from "@material-ui/core";
+import { Link } from "@material-ui/core";
 
 export const Sidebar = () => {
 	return (
 		<div className="sidebar">
 			<h3>Queries</h3>
 			<ul>
-				<li>Feature One</li>
-				<li>Second Thing</li>
-				<li>One More</li>
+				<li>
+					<Link>Feature One</Link>
+				</li>
+				<li>
+					<Link>Second Thing</Link>
+				</li>
+				<li>
+					<Link>One More</Link>
+				</li>
 			</ul>
 			<h3>Elsewhere</h3>
 			<ul>
-				<li>Reddit</li>
-				<li>Twitter</li>
-				<li>Facebook</li>
+				<li>
+					<Link>Reddit</Link>
+				</li>
+				<li>
+					<Link>Twitter</Link>
+				</li>
+				<li>
+					<Link>Facebook</Link>
+				</li>
 			</ul>
 		</div>
 	);
