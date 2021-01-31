@@ -1,4 +1,6 @@
-/* .container > * {border: 1px solid red;} */
+// .container > * {
+// 	border: 1px solid red;
+// }
 
 .header {
 	display: flex;
@@ -34,4 +36,8 @@
 	background-color: #d8dfe7;
 	color: #888;
 	text-align: center;
+}
+
+.main {
+	margin: 24px;
 }

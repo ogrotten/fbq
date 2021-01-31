@@ -7,14 +7,14 @@ body {
 /* grid.layoutit.com?id=zJUTDHK */
 
 .container {
-  display: grid;
-  grid-template-columns: 250px 650px;
-  grid-template-rows: 80px min-content 300px;
-  gap: 0px 15px;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+	display: grid;
+	grid-template-columns: 250px 650px;
+	grid-template-rows: 80px min-content 300px;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header header"
+		"sidebar main"
+		"footer footer";
 }
 
 .header {

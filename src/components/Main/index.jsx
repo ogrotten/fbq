@@ -68,6 +68,30 @@ export const Main = () => {
 					</TableBody>
 				</Table>
 			</Paper>
+			<Divider style={{ margin: 36 }} />
+			<Paper>
+				<Table>
+					<TableHead>
+						<TableRow>
+							<TableCell width={1}>Season</TableCell>
+							<TableCell width={1}>Record</TableCell>
+							<TableCell>Team</TableCell>
+						</TableRow>
+					</TableHead>
+					<TableBody>
+						{payload.map((line, idx) => {
+							return (
+								// <p>{line.team}</p>
+								<TableRow key={idx}>
+									<TableCell>{line.season}</TableCell>
+									<TableCell>{line.record}</TableCell>
+									<TableCell>{line.team}</TableCell>
+								</TableRow>
+							);
+						})}
+					</TableBody>
+				</Table>
+			</Paper>
 		</div>
 	);
 };
