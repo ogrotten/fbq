@@ -17,8 +17,8 @@ import {
 	Typography,
 } from "@material-ui/core";
 
-import "./App.frame.css";
-import "./App.styles.css";
+import "./App.frame.scss";
+import "./App.styles.scss";
 import { Footer } from "./components/Footer";
 import { Main } from "./components/Main";
 import { Sidebar } from "./components/Sidebar";

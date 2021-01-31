@@ -22,21 +22,21 @@ import {
 
 export const Header = () => {
 	return (
-		<AppBar>
+		<AppBar style={{ height: 80 }}>
 			<Toolbar className="header">
 				<ButtonGroup
 					variant="text"
 					size="small"
 					aria-label="small contained button group"
 				>
-					<Button>Home</Button>
-					<Button>Press</Button>
-					<Button>New Hires</Button>
-					<Button>About</Button>
+					<Button style={{ color: "white" }}>Home</Button>
+					<Button style={{ color: "white" }}>Press</Button>
+					<Button style={{ color: "white" }}>New Hires</Button>
+					<Button style={{ color: "white" }}>About</Button>
 				</ButtonGroup>
-				<div>
+				<div className="logo">
 					<h2>Football Queries</h2>
-					{/* <p>Doing the dirty work for NFL nerds.</p> */}
+					<p>Doing the dirty work for NFL nerds.</p>
 				</div>
 			</Toolbar>
 		</AppBar>
