@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-	Button,
+	Button, ButtonGroup,
 	Container,
 	Divider,
 	Grid,
@@ -18,7 +18,7 @@ function App() {
 
 	return (
 		<div>
-			<div>
+			<nav>
 				<div>
 					<div>Home</div>
 					<div>New feature</div>
@@ -29,30 +29,29 @@ function App() {
 						<h2>Football Queries</h2>
 					</div>
 				</div>
-				<Divider />
-			</div>
+				<hr />{/* <Divider /> */}
+			</nav>
 			<div>
-				<div>
-					{/* Left Sidebar */}
-					<div>
-						<Typography as="h4">Queries</Typography>
-						<List>
-							<ListItem>Feature One</ListItem>
-							<ListItem>Second Thing</ListItem>
-							<ListItem>One More</ListItem>
-						</List>
-						<Typography as="h4">Elsewhere</Typography>
-						<List>
-							<ListItem>Reddit</ListItem>
-							<ListItem>Twitter</ListItem>
-							<ListItem>Facebook</ListItem>
-						</List>
-					</div>
+				{/* Left Sidebar */}
+				<aside>
+					<Typography as="h4">Queries</Typography>
+					<ul>
+						<li>Feature One</li>
+						<li>Second Thing</li>
+						<li>One More</li>
+					</ul>
+					<Typography as="h4">Elsewhere</Typography>
+					<ul>
+						<li>Reddit</li>
+						<li>Twitter</li>
+						<li>Facebook</li>
+					</ul>
+				</aside>
 
-					{/* Main */}
-					<div>
-						{/* Main Title */}
-						{/* <Segment basic>
+				{/* Main */}
+				<section>
+					{/* Main Title */}
+					{/* <Segment basic>
 							<Header as="h1" size="huge">
 								<Header.Content></Header.Content>
 								<Header.Subheader>
@@ -61,47 +60,50 @@ function App() {
 							</Header>
 						</Segment> */}
 
-						{/* Main Content */}
+					{/* Main Content */}
+					<div>
 						<div>
-							<div>
-								<h3>Team Record Search</h3>
-								<Button.Group basic
+							<h3>Team Record Search</h3>
+							{/* button group <Button.Group basic
 									buttons={["Team Record", "Team Record Streaks", "Team Record Counts"]}
-								/>
-							</div>
-							<h4>Rest of the form goes in here.</h4>
+								/> */}
+							<ButtonGroup variant="text" size="small" aria-label="small contained button group">
+								<Button>Team Record</Button>
+								<Button>Team Record Streaks</Button>
+								<Button>Team Record Counts</Button>
+							</ButtonGroup>
 						</div>
-						<Table>
-							<TableHead>
-								<TableRow>
-									<TableCell width={1}>Season</TableCell>
-									<TableCell width={1}>Record</TableCell>
-									<TableCell>Team</TableCell>
-								</TableRow>
-							</TableHead>
-							<TableBody>
-								{payload.map((line, idx) => {
-									return (
-										// <p>{line.team}</p>
-										<TableRow key={idx}>
-											<TableCell collapsing>{line.season}</TableCell>
-											<TableCell collapsing>{line.record}</TableCell>
-											<TableCell selectable collapsing>{line.team}</TableCell>
-										</TableRow>
-									)
-								})}
-							</TableBody>
-						</Table>
-
+						<h4>Rest of the form goes in here.</h4>
 					</div>
-				</div>
+					<Table>
+						<TableHead>
+							<TableRow>
+								<TableCell width={1}>Season</TableCell>
+								<TableCell width={1}>Record</TableCell>
+								<TableCell>Team</TableCell>
+							</TableRow>
+						</TableHead>
+						<TableBody>
+							{payload.map((line, idx) => {
+								return (
+									// <p>{line.team}</p>
+									<TableRow key={idx}>
+										<TableCell>{line.season}</TableCell>
+										<TableCell>{line.record}</TableCell>
+										<TableCell>{line.team}</TableCell>
+									</TableRow>
+								)
+							})}
+						</TableBody>
+					</Table>
+				</section>
 			</div>
-			<div>
-				<Container>
+			<footer>
+				<div>
 					<p>Copyright 2020 footballqueries.com</p>
 					<a href="#root">Back to top</a>
-				</Container>
-			</div>
+				</div>
+			</footer>
 		</div>
 	);
 }
