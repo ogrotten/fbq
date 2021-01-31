@@ -1,0 +1,11 @@
+/* .container > * {border: 1px solid red;} */
+
+.header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.container {
+	background-color: rgb(248, 248, 248);
+}
