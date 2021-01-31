@@ -1,24 +1,6 @@
 import React from "react";
 
-import {
-	AppBar,
-	Button,
-	ButtonGroup,
-	Container,
-	Divider,
-	Grid,
-	List,
-	ListItem,
-	Menu,
-	Paper,
-	Table,
-	TableHead,
-	TableBody,
-	TableCell,
-	TableRow,
-	Toolbar,
-	Typography,
-} from "@material-ui/core";
+import { AppBar, Button, ButtonGroup, Toolbar } from "@material-ui/core";
 
 export const Header = () => {
 	return (
